@@ -263,10 +263,6 @@ if (!class_exists('bootstrap_menu4_top')) {
 if (!class_exists('bootstrap_menu4_bottom')) {
     class bootstrap_menu4_bottom extends Walker_Nav_Menu
     {
-        /**
-         * bootstrap_menu4 constructor.
-         * @param $with_dropdown
-         */
         function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
         {
             $item_html = '';
