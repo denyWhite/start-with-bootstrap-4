@@ -1,0 +1,22 @@
+{
+  "name": "start-with-bootstrap-4",
+  "version": "1.0.0",
+  "description": "Clean wordpress theme with minimal bootstrap4 mark for fast development starting",
+  "main": "no",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress",
+    "bootstrap4",
+    "development"
+  ],
+  "author": "Denis Belov",
+  "license": "ISC"
+}
