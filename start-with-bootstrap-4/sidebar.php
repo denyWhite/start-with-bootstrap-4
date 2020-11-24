@@ -6,7 +6,7 @@
  */
 ?>
 <?php if (is_active_sidebar( 'sidebar' )) { ?>
-<aside class="col-sm-3">
+<aside class="col-sm-3 offset-sm-1">
 	<?php dynamic_sidebar('sidebar'); ?>
 </aside>
 <?php } ?>

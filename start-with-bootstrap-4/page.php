@@ -11,7 +11,7 @@ get_header(); ?>
 			<div class="<?php content_class_by_sidebar(); ?>">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<h1><?php the_title(); ?></h1>
+						<h1  class="title"><?php the_title(); ?></h1>
 						<?php the_content(); ?>
 					</article>
 				<?php endwhile; ?>

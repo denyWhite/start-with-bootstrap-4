@@ -11,14 +11,16 @@ get_header(); ?>
 			<div class="<?php content_class_by_sidebar(); ?>">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<h1 class="display-3"><?php the_title(); ?></h1>
+                        <p class="nav-right"><a href="/blog">На главную</a></p>
+						<h1 class="title"><?php the_title(); ?></h1>
                         <div class="meta">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><?php the_time(get_option('date_format')." в ".get_option('time_format')); ?></li>
-                                    <li class="breadcrumb-item"><?php the_author_posts_link(); ?></li>
-                                    <li class="breadcrumb-item"><?php the_category(', ') ?></li>
-                                    <li class="breadcrumb-item"><?php the_tags('', ', ', '');?></li>
+                                    <li class="breadcrumb-item"><span class="pseudo">&#8249;date&#8250;</span><?php the_time(get_option('date_format')); echo "&nbsp;г."; ?><span class="pseudo">&#8249;/date&#8250;</span></li>
+                                    <?php $cats = get_the_category_list(', '); ?>
+                                    <?php if ($cats) :?><li class="breadcrumb-item"><?= $cats; ?></li><?php endif;?>
+                                    <?php $tags = get_the_tag_list('', ', ', ''); ?>
+                                    <?php if ($tags): ?><li class="breadcrumb-item"><?= $tags; ?></li><?php endif;?>
                                 </ol>
                             </nav>
                         </div>
@@ -26,7 +28,6 @@ get_header(); ?>
 					</article>
 				<?php endwhile; ?>
                 <?php previos_and_next();?>
-				<?php if (comments_open() || get_comments_number()) comments_template('', true); ?>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>

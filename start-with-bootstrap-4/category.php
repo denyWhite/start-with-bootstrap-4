@@ -9,7 +9,7 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="<?php content_class_by_sidebar(); ?>">
-                    <h1 class="display-3">Категория: <?php single_cat_title(); ?></h1>
+                    <h1 class="title">Посты на тему: <?php single_cat_title(); ?></h1>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <?php get_template_part('loop'); ?>
                     <?php endwhile; ?>

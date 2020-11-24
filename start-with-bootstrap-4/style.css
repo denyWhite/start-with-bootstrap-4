@@ -7,23 +7,22 @@ Description: Clean wordpress theme with minimal bootstrap4 markup for fast devel
 Author: Denis Belov
 Author URI: http://denywhite.ru
 */
+figcaption {text-align: center; font-size: 12px; font-style: italic; padding-left: 30%;}
+.wp-block-gallery {margin: 20px auto;}
+pre {color: #bbb;}
+.title a:hover,.title a:hover{text-decoration: none;}
+.title {text-align: center; font-family: 'Merriweather', serif; font-size: 2.5rem;}
+.pseudo{color: #aaa; font-size: 0.9rem;font-style: italic;}
+
+nav.navbar {color: #fff;background-color: #de000f;border-color: #de000f; margin-bottom: 3rem;}
+a.navbar-brand, #logo,a.nav-link{color: #fff;}
+a.navbar-brand:hover, #logo:hover,a.nav-link:hover{color: #fff;}
+
+.nav-right{text-align: right;}
+code {width: 90%; margin: 0 auto; display: block; background: rgba(255,255,255, 0.1); padding: 1rem;}
+
 
 /* =WordPress Core */
-/*
-@media (min-width: 979px) { 
-	ul.nav li.dropdown.show-on-hover:hover > ul.dropdown-menu {
-		display: block;
-	}
-	.comment-list .children {
-		padding: 0;
-		margin-left: 74px;
-		padding-bottom: 15px;
-	}
-	.comment-list .media {
-		margin-top: 0;
-	}
-}
-
 
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -100,4 +99,13 @@ a img.aligncenter {
     margin: 0;
     padding: 0 4px 5px;
 }
-*/
+
+h1 a{color: #fff;}
+h1 a:hover{text-decoration: none;color: #fcc;}
+.widgettitle{margin-top: 10px;}
+a{color:#ff9999}
+a:hover{color: #de000f}
+blockquote {position: relative; font-weight: 300; padding: 10px 20px; max-width: 90%;
+z-index: 1; margin: 10px auto; align-self: center; border-left: solid 3px;}
+
+.wp-block-button{ margin: 30px auto;}
